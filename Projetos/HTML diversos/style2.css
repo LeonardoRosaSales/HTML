@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo da página */
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens verticalmente no centro da página */
+    justify-content: center; /* Alinha os itens horizontalmente no centro da página */
+    height: 100vh; /* Ajusta a altura para ocupar a altura total da viewport */
+    margin: 0; /* Remove as margens padrão do corpo da página */
+    background-color: #f2f2f2; /* Cor de fundo para melhor visualização */
+}
+
+/* Estilo para os diferentes elementos com formas usando clip-path e texto alternativo */
+.elemento-clip {
+    width: 200px; /* Define a largura do elemento */
+    height: 200px; /* Define a altura do elemento */
+    margin: 10px; /* Adiciona uma margem ao redor do elemento */
+    display: inline-block; /* Permite que os elementos apareçam em linha */
+    overflow: hidden; /* Impede que imagens grandes ultrapassem os limites do contêiner */
+    position: relative; /* Permite posicionar o texto sobre a imagem */
+}
+
+/* Classe para criar um quadrado com clip-path e texto alternativo */
+.quadrado-clip {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Define um quadrado usando clip-path */
+    background-image: url('https://picsum.photos/100'); /* Adiciona uma imagem de fundo ao quadrado */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente o elemento */
+}
+
+/* Classe para criar um círculo com clip-path e texto alternativo */
+.circulo-clip {
+    clip-path: circle(50% at 50% 50%); /* Define um círculo usando clip-path */
+    background-image: url('https://picsum.photos/105'); /* Adiciona uma imagem de fundo ao círculo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente o elemento */
+}
+
+/* Classe para criar uma elipse com clip-path e texto alternativo */
+.elipse-clip {
+    clip-path: ellipse(50% 70% at 50% 50%); /* Define uma elipse usando clip-path */
+    background-image: url('https://picsum.photos/110'); /* Adiciona uma imagem de fundo à elipse */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente o elemento */
+}
+
+/* Classe para criar um triângulo com clip-path e texto alternativo */
+.triangulo-clip {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Define um triângulo usando clip-path */
+    background-image: url('https://picsum.photos/200'); /* Adiciona uma imagem de fundo ao triângulo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente o elemento */
+}
+
+/* Classe para criar um pentágono com clip-path e texto alternativo */
+.pentagono-clip {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* Define um pentágono usando clip-path */
+    background-image: url('https://picsum.photos/250'); /* Adiciona uma imagem de fundo ao pentágono */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente o elemento */
+}
+
+/* Estilo para o texto alternativo */
+.texto-alternativo {
+    position: absolute; /* Posiciona o texto absolutamente em relação ao elemento-clip */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza completamente */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+}

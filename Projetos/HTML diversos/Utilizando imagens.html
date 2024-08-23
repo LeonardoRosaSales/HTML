@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML -->
+<html lang="pt-br">
+<!-- Início do elemento HTML com atributo de linguagem definido como português do Brasil -->
+<head>
+    <!-- Início da seção de cabeçalho do documento -->
+    <meta charset="UTF-8">
+    <!-- Especifica a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a visualização inicial da página para se ajustar ao tamanho do dispositivo -->
+    <title>Exemplos de Adição de Imagens em HTML5</title>
+    <!-- Define o título da página exibido na barra de título do navegador -->
+</head>
+<!-- Fim da seção de cabeçalho -->
+
+<body>
+    <!-- Início do corpo do documento -->
+
+    <!-- Imagem usando a tag <img> -->
+    <h2>1. Utilizando a tag &lt;img&gt;</h2>
+    <!-- Título indicando o exemplo a seguir -->
+    <!-- Inclui uma imagem usando a tag <img> com a fonte sendo uma URL do Picsum -->
+    <img src="https://picsum.photos/100" alt="Imagem 1">
+    <!-- Exibe uma imagem de 100x100 pixels do Picsum com um texto alternativo -->
+
+    <!-- Imagem usando CSS background-image -->
+    <h2>2. Utilizando CSS com background-image</h2>
+    <!-- Título indicando o exemplo a seguir -->
+    <!-- Cria uma div com uma imagem de fundo usando CSS -->
+    <div style="width: 100px; height: 100px; background-image: url('https://picsum.photos/101'); background-size: cover;"></div>
+    <!-- Define uma div de 100x100 pixels com uma imagem de fundo do Picsum, cobrindo a div -->
+
+    <!-- Imagem como link -->
+    <h2>3. Imagem como link</h2>
+    <!-- Título indicando o exemplo a seguir -->
+    <!-- Cria um link para uma URL do Picsum contendo uma imagem -->
+    <a href="https://picsum.photos/102" target="_blank">
+        <!-- Abre um novo guia ou janela quando o link é clicado -->
+        <img src="https://picsum.photos/102" alt="Imagem 3">
+        <!-- Exibe uma imagem de 100x100 pixels do Picsum dentro do link com um texto alternativo -->
+    </a>
+
+    <!-- Imagem usando a tag <picture> -->
+    <h2>4. Utilizando a tag &lt;picture&gt;</h2>
+    <!-- Título indicando o exemplo a seguir -->
+    <!-- Utiliza a tag <picture> para fornecer diferentes fontes de imagem com base em tamanhos de tela -->
+    <picture>
+        <!-- Início da tag <source>, fornecendo uma imagem diferente para telas maiores ou iguais a 768 pixels de largura -->
+        <source srcset="https://picsum.photos/103" media="(min-width: 768px)">
+        <!-- Fim da tag <source> -->
+        <!-- Início da tag <img> que será usada se nenhuma condição atender -->
+        <img src="https://picsum.photos/103" alt="Imagem 4">
+        <!-- Fim da tag <img> -->
+    </picture>
+    <!-- Fim da tag <picture> -->
+
+</body>
+<!-- Fim do corpo do documento -->
+
+</html>
+<!-- Fim do elemento HTML -->
+

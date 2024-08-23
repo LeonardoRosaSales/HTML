@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo da página */
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens verticalmente no centro da página */
+    justify-content: center; /* Alinha os itens horizontalmente no centro da página */
+    height: 100vh; /* Ajusta a altura para ocupar a altura total da viewport */
+    margin: 0; /* Remove as margens padrão do corpo da página */
+}
+
+/* Estilo para os diferentes elementos com formas */
+.elemento {
+    width: 100px; /* Define a largura do elemento */
+    height: 100px; /* Define a altura do elemento */
+    background-color: #3934db; /* Define a cor de fundo do elemento */
+    margin: 40px; /* Adiciona uma margem ao redor do elemento */
+    display: inline-block; /* Permite que os elementos apareçam em linha */
+}
+
+/* Classe para criar um quadrado */
+.quadrado {
+    /* Valor de border-radius: 0 cria um quadrado */
+    border-radius: 0; /* Sem arredondamento nas bordas, formando um quadrado */
+}
+
+/* Classe para criar um círculo */
+.circulo {
+    /* Valor de border-radius: 50% cria um círculo */
+    border-radius: 50%; /* 50% do raio em todas as bordas, formando um círculo */
+}
+
+/* Classe para criar uma elipse */
+.elipse {
+    /* Valores diferentes de border-radius criam uma elipse */
+    border-radius: 50% 20%; /* 50% do raio horizontal e 20% do raio vertical, formando uma elipse */
+}
+
+/* Classe para criar um triângulo */
+.triangulo {
+    /* Usando bordas e valores de border-radius para criar um triângulo */
+    width: 0; /* Largura zero para criar uma linha vertical invisível */
+    height: 0; /* Altura zero para criar uma linha horizontal invisível */
+    border-left: 50px solid transparent; /* Triângulo apontando para a direita, lado esquerdo transparente */
+    border-right: 50px solid transparent; /* Triângulo apontando para a esquerda, lado direito transparente */
+    border-bottom: 87px solid #e74c3c; /* Triângulo com a base para cima, altura calculada usando teorema de Pitágoras */
+    border-radius: 0; /* Não há arredondamento nas bordas, formando um triângulo */
+}
+
+/* Classe para criar um losango */
+.losango {
+    /* Usando bordas e valores de border-radius para criar um losango */
+    width: 0; /* Largura zero para criar uma linha vertical invisível */
+    height: 0; /* Altura zero para criar uma linha horizontal invisível */
+    border-style: solid; /* Define o estilo da borda como sólido */
+    border-width: 50px 25px 0; /* Losango com 50px de altura e 25px de largura da base */
+    border-color: #27ae60 transparent transparent; /* Cor verde para a borda inferior do losango */
+    border-radius: 0; /* Não há arredondamento nas bordas, formando um losango */
+}
